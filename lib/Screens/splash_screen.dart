@@ -23,27 +23,24 @@ class _splashScreenState extends State<splashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Container(
-          alignment: AlignmentDirectional.center,
-          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 200),
-          decoration: const BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage('assets/Image/Background.png'),
-                  fit: BoxFit.cover)),
-          child: Column(
-            children: [
-              Image.asset("assets/Logo/DOON_VALEEY_LOGO_PNG.png"),
-              SizedBox(
-                height: 30,
-              ),
-              Text("The Doon Valley Public school",
-                  style: GoogleFonts.robotoCondensed(
-                      fontSize: 25, color: Colors.black))
-            ],
-          ),
+    return Scaffold(
+      body: Container(
+        alignment: AlignmentDirectional.center,
+        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 200),
+        decoration: const BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage('assets/Image/Background.png'),
+                fit: BoxFit.cover)),
+        child: Column(
+          children: [
+            Image.asset("assets/Logo/DOON_VALEEY_LOGO_PNG.png"),
+            SizedBox(
+              height: 30,
+            ),
+            Text("The Doon Valley Public school",
+                style: GoogleFonts.robotoCondensed(
+                    fontSize: 25, color: Colors.black))
+          ],
         ),
       ),
     );
